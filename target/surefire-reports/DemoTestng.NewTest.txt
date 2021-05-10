@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: DemoTestng.NewTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 2.007 sec <<< FAILURE!
+openURL(DemoTestng.NewTest)  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at DemoTest.BaseClass.initializeDriver(BaseClass.java:44)
+	at DemoTestng.NewTest.openURL(NewTest.java:35)
+

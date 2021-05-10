@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- <suite name="Suite" parallel="tests"> --> <!-- this is for parallel execution -->
+<listeners>
+<listener class-name="DemoTestng.Listners"></listener>
+</listeners>
+ 
+ <!-- <test  name="Regression"> -->
+ 
+ <test name="Test"> <!-- closing in tests all classes becuase after test close browser will not close browser after every test cases -->
+ <classes>
+      <class name="DemoTestng.NewTest"> 
+      <methods>
+      <include name="openURL"></include> 
+      <exclude name="extentReports"></exclude>
+      <exclude name="setUpDB"></exclude>
+      <exclude name="test"></exclude>
+      <exclude name="validateUserLogIn"></exclude>
+      <exclude name="registration"></exclude>
+      <exclude name="selGrid"></exclude>
+      <exclude name="validateTestEnvURL"></exclude>
+      <exclude name="getTitleOfPage"></exclude>
+      <exclude name="paymentMethod"></exclude>
+      <exclude name="proceedToCheckout"></exclude>
+      <exclude name="orderPlace"></exclude>
+      <exclude name="envCheck"></exclude>
+      <exclude name="validateUser"></exclude>
+      <exclude name="dbConnection"></exclude>
+      <exclude name="cleanData"></exclude>
+      <include name="signUp"></include>
+      <include name="demo1"></include>
+     <exclude name="demo2"></exclude>
+     <exclude name="logIn"></exclude>
+     <include name="closeBrowser"></include>
+     </methods>
+      </class>
+ </classes>
+ </test>
+ <test name="Test2">
+ <classes>
+ <class name="DemoTestng.NewTest2">
+ <methods>
+      <include name="searchCart"></include>
+ </methods>
+ </class>
+ </classes>
+ </test>
+      
+ 
+  <!-- <listeners>
+  <listener class-name="NewTest"></listener>
+  </listeners> --> 
+  <!-- <packages>
+  <package name="DemoTestng"></package>
+  </packages> 
+  
+ <test  name="Regression">
+    <parameter name="Username" value="neharaj"></parameter>
+  <parameter name="Password" value="123456"></parameter>
+ <parameter name="URL" value="abc@g.com"></parameter>  
+     -->
+  
+   <!-- <groups>
+  <run>
+  <include name="Smoke"></include>
+  </run>
+  </groups>  -->
+     <!-- <classes>
+      <class name="DemoTestng.NewTest">  to run all the methods of one class
+      <methods>
+      <include name="openURL"></include>
+      <include name="extentReports"></include>
+      <exclude name="setUpDB"></exclude>
+      <include name="test"></include>
+      <exclude name="validateUserLogIn"></exclude>
+      <exclude name="registration"></exclude>
+      <exclude name="selGrid"></exclude>
+      <exclude name="validateTestEnvURL"></exclude>
+      <exclude name="getTitleOfPage"></exclude>
+      <exclude name="paymentMethod"></exclude>
+      <exclude name="proceedToCheckout"></exclude>
+      <exclude name="orderPlace"></exclude>
+      <exclude name="envCheck"></exclude>
+      <exclude name="validateUser"></exclude>
+      <exclude name="dbConnection"></exclude>
+      <exclude name="cleanData"></exclude>
+      <exclude name="signUp"></exclude>
+      <exclude name="demo1"></exclude>
+     <exclude name="demo2"></exclude>
+     <exclude name="logIn"></exclude>
+      </methods>
+     
+     
+      </class> -->
+     <!-- <class name="DemoTestng.NewTest2">  to run all the methods of one class
+      <methods>
+      <exclude name="searchCart"></exclude>
+      </methods>
+     </class> -->
+   <!--  </classes>  -->
+  <!-- </test>  --><!-- Test -->
+</suite> <!-- Suite -->
