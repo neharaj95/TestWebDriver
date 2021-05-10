@@ -46,6 +46,7 @@ public class NewTest extends BaseClass{
 	  driver.get(prop.getProperty("urlTestEnv")); // from base class , passed value in properties and retrieving from there
 	 // driver.get("https://www.google.com");
 	  System.out.println("Driver Initialized and git learning");
+	  System.out.println("pull the code to local machine for git learning");
 	  log.info("Driver Initialized");
   }
 	
