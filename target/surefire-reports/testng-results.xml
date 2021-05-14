@@ -2,43 +2,59 @@
 <testng-results ignored="17" total="20" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-13T17:05:55 IST" name="Suite" finished-at="2021-05-13T17:06:08 IST" duration-ms="12541">
+  <suite started-at="2021-05-14T19:45:14 IST" name="Suite" finished-at="2021-05-14T19:45:28 IST" duration-ms="14260">
     <groups>
     </groups>
-    <test started-at="2021-05-13T17:05:55 IST" name="Test" finished-at="2021-05-13T17:06:01 IST" duration-ms="5700">
+    <test started-at="2021-05-14T19:45:14 IST" name="Test" finished-at="2021-05-14T19:45:21 IST" duration-ms="7531">
       <class name="DemoTestng.NewTest">
-        <test-method is-config="true" signature="openURL()[pri:0, instance:DemoTestng.NewTest@340da44c]" started-at="2021-05-13T17:05:55 IST" name="openURL" finished-at="2021-05-13T17:06:00 IST" duration-ms="5070" status="PASS">
+        <test-method is-config="true" signature="openURL()[pri:0, instance:DemoTestng.NewTest@3d97a632]" started-at="2021-05-14T19:45:14 IST" name="openURL" finished-at="2021-05-14T19:45:21 IST" duration-ms="6637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openURL -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:DemoTestng.NewTest@340da44c]" started-at="2021-05-13T17:06:00 IST" name="setUp" finished-at="2021-05-13T17:06:01 IST" duration-ms="551" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:DemoTestng.NewTest@3d97a632]" started-at="2021-05-14T19:45:21 IST" name="setUp" finished-at="2021-05-14T19:45:21 IST" duration-ms="510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="demo1()[pri:0, instance:DemoTestng.NewTest@340da44c]" started-at="2021-05-13T17:06:01 IST" name="demo1" finished-at="2021-05-13T17:06:01 IST" duration-ms="11" status="PASS">
+        <test-method signature="demo1()[pri:0, instance:DemoTestng.NewTest@3d97a632]" started-at="2021-05-14T19:45:21 IST" name="demo1" finished-at="2021-05-14T19:45:21 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- demo1 -->
-        <test-method signature="signUp()[pri:1, instance:DemoTestng.NewTest@340da44c]" started-at="2021-05-13T17:06:01 IST" name="signUp" finished-at="2021-05-13T17:06:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoTestng.NewTest@3d97a632]" started-at="2021-05-14T19:45:21 IST" name="afterMethod" finished-at="2021-05-14T19:45:21 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="signUp()[pri:1, instance:DemoTestng.NewTest@3d97a632]" started-at="2021-05-14T19:45:21 IST" name="signUp" finished-at="2021-05-14T19:45:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUp -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoTestng.NewTest@3d97a632]" started-at="2021-05-14T19:45:21 IST" name="afterMethod" finished-at="2021-05-14T19:45:21 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:DemoTestng.NewTest@3d97a632]" started-at="2021-05-14T19:45:21 IST" name="afterTest" finished-at="2021-05-14T19:45:21 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- DemoTestng.NewTest -->
     </test> <!-- Test -->
-    <test started-at="2021-05-13T17:06:01 IST" name="Test2" finished-at="2021-05-13T17:06:08 IST" duration-ms="6352">
+    <test started-at="2021-05-14T19:45:22 IST" name="Test2" finished-at="2021-05-14T19:45:28 IST" duration-ms="6274">
       <class name="DemoTestng.NewTest2">
-        <test-method is-config="true" signature="sessionTimeout()[pri:0, instance:DemoTestng.NewTest2@1a9c38eb]" started-at="2021-05-13T17:06:01 IST" name="sessionTimeout" finished-at="2021-05-13T17:06:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="sessionTimeout()[pri:0, instance:DemoTestng.NewTest2@3bd418e4]" started-at="2021-05-14T19:45:22 IST" name="sessionTimeout" finished-at="2021-05-14T19:45:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sessionTimeout -->
-        <test-method signature="searchCart()[pri:0, instance:DemoTestng.NewTest2@1a9c38eb]" started-at="2021-05-13T17:06:01 IST" name="searchCart" finished-at="2021-05-13T17:06:07 IST" duration-ms="5662" status="PASS">
+        <test-method signature="searchCart()[pri:0, instance:DemoTestng.NewTest2@3bd418e4]" started-at="2021-05-14T19:45:22 IST" name="searchCart" finished-at="2021-05-14T19:45:28 IST" duration-ms="5965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchCart -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:DemoTestng.NewTest2@1a9c38eb]" started-at="2021-05-13T17:06:07 IST" name="closeBrowser" finished-at="2021-05-13T17:06:08 IST" duration-ms="687" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:DemoTestng.NewTest2@3bd418e4]" started-at="2021-05-14T19:45:28 IST" name="afterMethod" finished-at="2021-05-14T19:45:28 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:DemoTestng.NewTest2@3bd418e4]" started-at="2021-05-14T19:45:28 IST" name="afterTest" finished-at="2021-05-14T19:45:28 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- DemoTestng.NewTest2 -->
     </test> <!-- Test2 -->
   </suite> <!-- Suite -->

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="DemoTestng.NewTest" class="method navigator-link" hash-for-method="demo2">demo2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,43 +127,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">DemoTestng.NewTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="demo2">
-                  </a> <!-- demo2 -->
-                  <span class="method-name">demo2</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;abc&quot;}
-  (Session info: chrome=90.0.4430.212)
-  (Driver info: chromedriver=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}),platform=Mac OS X 10.14.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.05 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
-System info: host: &apos;Nehas-MacBook-Air.local&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;13.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52962}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}), userDataDir=/var/folders/sr/swfvh9190qn1s7_8kk2gszch0000gn/T/.com.google.Chrome.KNmKxC}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=90.0.4430.212, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
-Session ID: 3d0d5b5b3bc0ab39ba8046c2424cb48d
-*** Element info: {Using=xpath, value=abc}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at DemoTestng.NewTest.demo2(NewTest.java:69)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,7 +184,6 @@ Session ID: 3d0d5b5b3bc0ab39ba8046c2424cb48d
           &lt;include name=&quot;openURL&quot;/&gt;
           &lt;include name=&quot;signUp&quot;/&gt;
           &lt;include name=&quot;demo1&quot;/&gt;
-          &lt;include name=&quot;demo2&quot;/&gt;
           &lt;include name=&quot;closeBrowser&quot;/&gt;
           &lt;exclude name=&quot;extentReports&quot;/&gt;
           &lt;exclude name=&quot;setUpDB&quot;/&gt;
@@ -252,6 +200,7 @@ Session ID: 3d0d5b5b3bc0ab39ba8046c2424cb48d
           &lt;exclude name=&quot;validateUser&quot;/&gt;
           &lt;exclude name=&quot;dbConnection&quot;/&gt;
           &lt;exclude name=&quot;cleanData&quot;/&gt;
+          &lt;exclude name=&quot;demo2&quot;/&gt;
           &lt;exclude name=&quot;logIn&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- DemoTestng.NewTest --&gt;
@@ -290,14 +239,6 @@ Session ID: 3d0d5b5b3bc0ab39ba8046c2424cb48d
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">demo2</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -314,28 +255,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'demo2')
-data.setCell(0, 2, 'DemoTestng.NewTest')
-data.setCell(0, 3, 10060);
+data.setCell(0, 1, 'searchCart')
+data.setCell(0, 2, 'DemoTestng.NewTest2')
+data.setCell(0, 3, 4559);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchCart')
-data.setCell(1, 2, 'DemoTestng.NewTest2')
-data.setCell(1, 3, 5027);
+data.setCell(1, 1, 'demo1')
+data.setCell(1, 2, 'DemoTestng.NewTest')
+data.setCell(1, 3, 18);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'demo1')
+data.setCell(2, 1, 'signUp')
 data.setCell(2, 2, 'DemoTestng.NewTest')
-data.setCell(2, 3, 31);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'signUp')
-data.setCell(3, 2, 'DemoTestng.NewTest')
-data.setCell(3, 3, 3);
+data.setCell(2, 3, 3);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -350,7 +287,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">16 ignored methods</span>
+            <span class="header-content">17 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -374,6 +311,8 @@ return data;
                 <span class="ignored-method-name">paymentMethod</span>
                 <br/>
                 <span class="ignored-method-name">dbConnection</span>
+                <br/>
+                <span class="ignored-method-name">demo2</span>
                 <br/>
                 <span class="ignored-method-name">registration</span>
                 <br/>
@@ -410,56 +349,46 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">5152 ms</span>
+                <span class="method-start">5342 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">demo1</span>
-                <span class="method-start">5869 ms</span>
+                <span class="method-start">6056 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">5919 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">demo2</span>
-                <span class="method-start">5949 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">16153 ms</span>
+                <span class="method-start">6091 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">signUp</span>
-                <span class="method-start">16166 ms</span>
+                <span class="method-start">6119 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">16173 ms</span>
+                <span class="method-start">6126 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">16184 ms</span>
+                <span class="method-start">6162 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DemoTestng.NewTest2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">sessionTimeout</span>
-                <span class="method-start">16815 ms</span>
+                <span class="method-start">6855 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchCart</span>
-                <span class="method-start">16815 ms</span>
+                <span class="method-start">6856 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">21844 ms</span>
+                <span class="method-start">11418 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">21866 ms</span>
+                <span class="method-start">11439 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

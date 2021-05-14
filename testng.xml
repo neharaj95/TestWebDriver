@@ -31,7 +31,7 @@
 	     <exclude name="cleanData"></exclude>
 	     <include name="signUp"></include>
 	     <include name="demo1"></include>
-	     <include name="demo2"></include>
+	     <exclude name="demo2"></exclude>
 	     <exclude name="logIn"></exclude>
 	     <include name="closeBrowser"></include>
       </methods>
