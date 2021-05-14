@@ -1,26 +1,43 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>TestWebdriver</groupId>
   <artifactId>TestWebdriver</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
+  
   <name>TestWebdriver</name>
   <url>http://maven.apache.org</url>  <!-- impt to add, to run the code from jenkins  -->
   <!-- adding below plugin to tell pom about testng file when we run mvn test -->
+  
+   <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  
+  
+  </properties>
+  
+  <!-- plugin required to execute TCs -->
+ 
   <build>
   <pluginManagement>
   <plugins>
     
       <plugin>
+        
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M5</version>
+        
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+         <!--  TestNG suuite XML Files -->
+            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
+        
       </plugin>
   
 </plugins>
@@ -31,10 +48,8 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
         <directory>src/test/resources</directory>
         <filtering>true</filtering>
    </resource>
-</resources>
-   
-     
-  </build>
+ </resources>    
+</build>
   
   <!-- we r defining resources that will look for log4j where it is defined , define path where u put ur log4j xml file  -->
   <!-- <build>
@@ -49,17 +64,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
       </plugin>
     </plugins>
   </build>  -->
- <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-  <dependencies>			
-        <!-- <dependency>				
+  
+
+  <dependencies>
+  			
+        <dependency>				
              <groupId>junit</groupId>								
              <artifactId>junit</artifactId>								
              <version>3.8.1</version>								
              <scope>test</scope>								
-        </dependency> -->
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
 <!-- <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -72,12 +86,11 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <artifactId>selenium-java</artifactId>								
             <version>2.45.0</version>								
 		</dependency>				
-        <dependency>				
+        <!-- <dependency>				
             <groupId>org.testng</groupId>								
             <artifactId>testng</artifactId>								
-            <version>6.8.8</version>								
-            <scope>test</scope>							  			
-       </dependency>	
+            <version>6.8.8</version>															  			
+       </dependency> -->	
        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 <dependency>
     <groupId>org.apache.poi</groupId>
@@ -126,24 +139,41 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <version>2.8.0</version>
 </dependency>
 
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.0</version>
 
+</dependency>
+
+<!-- for loogin purpose -->
   <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-api</artifactId>
-    <version>2.4</version>
+    <version>2.8.2</version>
+    <scope>test</scope>
   </dependency>
   <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-core</artifactId>
-    <version>2.4</version>
+    <version>2.8.2</version>
   </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>  
+ </dependency> 
 
-
+<!-- <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.1.1</version>
+            <scope>test</scope>
+        </dependency> -->
 
        			
 </dependencies>
-
-
   
 </project>

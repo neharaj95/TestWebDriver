@@ -2,6 +2,8 @@ package DemoTestng;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
@@ -13,7 +15,7 @@ import DemoTest.BaseClass;
 import DemoTest.ExtentSparkReport;
 
 public class NewTest2 extends BaseClass{
-
+	public static Logger log =LogManager.getLogger(NewTest2.class.getName()); 
 	@Test
 	public void searchCart() throws IOException {
 		driver=initializeDriver();
@@ -44,12 +46,12 @@ public class NewTest2 extends BaseClass{
 	
 		
 	}
-	@AfterTest
-	public void closeBrowser()
-	{
-		System.out.println("close browser");
-		driver.quit();
-	}
+//	@AfterTest
+//	public void closeBrowser()
+//	{
+//		System.out.println("close browser");
+//		driver.quit();
+//	}
 	
 	
 	

@@ -10,6 +10,8 @@
         <methods>
           <include name="demo2"/>
           <include name="openURL"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- DemoTestng.NewTest -->

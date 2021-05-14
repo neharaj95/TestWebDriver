@@ -7,13 +7,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.apache.logging.log4j.core.*;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.apache.logging.log4j.LogManager; // import apache logger, don't import java logger
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.*;
-import org.apache.logging.log4j.Logger;
+
+
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -35,11 +35,11 @@ public class NewTest extends BaseClass{
 	
 	public WebDriver driver; // if u won't define this here then screenshot will not capture and will throw driver error
 	
-	public static Logger log =LogManager.getLogger(BaseClass.class.getName()); // we can define in everypage to get loggers
+	public static Logger log =LogManager.getLogger(NewTest.class.getName()); // we can define in everypage to get loggers
 	
  HomePage hp= new HomePage();
 	  	
-  @BeforeTest
+  @BeforeTest(alwaysRun=true)
   public void openURL() throws IOException 
   {
 	  driver=initializeDriver();
@@ -47,7 +47,7 @@ public class NewTest extends BaseClass{
 	 // driver.get("https://www.google.com");
 	  System.out.println("Driver Initialized and git learning");
 	  System.out.println("pull the code to local machine for git learning");
-	  log.info("Driver Initialized");
+	  log.info("Driver Initialized by log4j");
   }
 	
   @Parameters({"URL"})

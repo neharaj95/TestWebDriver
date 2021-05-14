@@ -13,6 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 
@@ -22,6 +24,7 @@ public class BaseClass {
 	public Properties prop; //make it public so scope will be public
 	
 	
+	 
 	
 	public WebDriver initializeDriver() throws IOException
 	{
@@ -54,8 +57,21 @@ public class BaseClass {
 		
 		return driver;	
 
-	
+	   
 	}
+	
+	@AfterMethod()
+	public void afterMethod() 
+	{
+		driver.manage().deleteAllCookies();
+		System.out.println("deleted all cookies after every method");
+	}
+	@AfterTest(alwaysRun=true)
+	   public void afterTest() 
+	   {
+		   driver.close();
+		   System.out.println("Close browser");
+	   }
 	
 	public String Screenshot(String TestCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot screen=(TakesScreenshot)driver;
