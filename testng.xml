@@ -60,7 +60,7 @@
   
  <test  name="Regression">
     <parameter name="Username" value="neharaj"></parameter>
-  <parameter name="Password" value="123456"></parameter>
+  <parameter name="" value=""></parameter>
  <parameter name="URL" value="abc@g.com"></parameter>  
      -->
   
